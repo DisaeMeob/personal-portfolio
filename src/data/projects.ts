@@ -32,7 +32,7 @@ export const projectsContent: Record<Language, ProjectsContent> = {
           'Alembic',
           'Pytest',
         ],
-        githubUrl: 'https://github.com/DisaeMeob/ai_booking',
+        githubUrl: 'https://github.com/DisaeMeob/booking',
         githubLabel: 'Репозиторий проекта',
       },
       {
@@ -91,7 +91,7 @@ export const projectsContent: Record<Language, ProjectsContent> = {
           'Alembic',
           'Pytest',
         ],
-        githubUrl: 'https://github.com/DisaeMeob/ai_booking',
+        githubUrl: 'https://github.com/DisaeMeob/booking',
         githubLabel: 'Project Repository',
       },
       {
