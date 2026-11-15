@@ -4,7 +4,7 @@ import type { ProjectsContent } from '../types/project.ts'
 export const projectsContent: Record<Language, ProjectsContent> = {
   ru: {
     title: 'Проекты',
-    subtitle: 'Практические backend-проекты с открытым исходным кодом',
+    subtitle: 'Практические backend- и инженерные проекты с открытым исходным кодом',
     highlightsTitle: 'Ключевые особенности:',
     items: [
       {
@@ -59,11 +59,39 @@ export const projectsContent: Record<Language, ProjectsContent> = {
         githubUrl: 'https://github.com/DisaeMeob/loskutok',
         githubLabel: 'Репозиторий проекта',
       },
+      {
+        id: 'personal-dashboard',
+        title: 'LifePulse — Personal Dashboard & WidgetKit Suite',
+        type: 'iOS & Offline PWA',
+        status: 'Pet-проект',
+        description:
+          'Минималистичный персональный дашборд с локальным хранением данных (Local-First). Включает расписание дня, фокус-таймер Pomodoro, трекер привычек, модуль личных финансов («Копилка» и расчет баланса), а также виджеты WidgetKit и автономную PWA-версию.',
+        highlights: [
+          'Изолированное Swift Package ядро (LifePulseCore) с Unit-тестами бизнес-логики и финансовых расчетов',
+          'Поддержка нативных виджетов iOS (Small, Medium, Large) через WidgetKit и графиков Swift Charts',
+          'Автономное PWA-приложение с кэшированием Service Worker для запуска без Xcode',
+          'Модуль личных финансов с расчетом прогресса накоплений и визуализацией круговой диаграммой',
+          'Потокобезопасное локальное хранение данных без необходимости удаленного сервера',
+        ],
+        technologies: [
+          'Swift 6',
+          'SwiftUI',
+          'WidgetKit',
+          'Swift Charts',
+          'JavaScript',
+          'Service Worker',
+          'PWA',
+        ],
+        githubUrl: 'https://github.com/DisaeMeob/personal-dashboard',
+        githubLabel: 'Репозиторий проекта',
+        demoUrl: 'https://disaemeob.github.io/personal-dashboard/',
+        demoLabel: 'Демо PWA',
+      },
     ],
   },
   en: {
     title: 'Projects',
-    subtitle: 'Hands-on open-source backend projects',
+    subtitle: 'Hands-on open-source backend and engineering projects',
     highlightsTitle: 'Key Features:',
     items: [
       {
@@ -117,6 +145,34 @@ export const projectsContent: Record<Language, ProjectsContent> = {
         ],
         githubUrl: 'https://github.com/DisaeMeob/loskutok',
         githubLabel: 'Project Repository',
+      },
+      {
+        id: 'personal-dashboard',
+        title: 'LifePulse — Personal Dashboard & WidgetKit Suite',
+        type: 'iOS & Offline PWA',
+        status: 'Pet Project',
+        description:
+          'Minimalist local-first personal dashboard combining daily schedule, Pomodoro focus timer, goal tracker, and personal finance management with goal-based savings. Features native iOS WidgetKit widgets and an offline-first PWA.',
+        highlights: [
+          'Modular Swift Package core (LifePulseCore) with unit-tested domain models and calculations',
+          'Native iOS WidgetKit suite (Small, Medium, Large) and Swift Charts data visualization',
+          'Standalone offline-first PWA powered by Service Worker caching for instant mobile usage',
+          'Savings goals module with real-time remaining calculations and monthly income/expense breakdown',
+          'Thread-safe local-first data storage without cloud dependencies',
+        ],
+        technologies: [
+          'Swift 6',
+          'SwiftUI',
+          'WidgetKit',
+          'Swift Charts',
+          'JavaScript',
+          'Service Worker',
+          'PWA',
+        ],
+        githubUrl: 'https://github.com/DisaeMeob/personal-dashboard',
+        githubLabel: 'Project Repository',
+        demoUrl: 'https://disaemeob.github.io/personal-dashboard/',
+        demoLabel: 'Live PWA Demo',
       },
     ],
   },

@@ -8,6 +8,8 @@ export interface ProjectItem {
   readonly technologies: readonly string[]
   readonly githubUrl: string
   readonly githubLabel?: string
+  readonly demoUrl?: string
+  readonly demoLabel?: string
 }
 
 export interface ProjectsContent {

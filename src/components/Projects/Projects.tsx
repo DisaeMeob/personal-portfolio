@@ -75,16 +75,30 @@ export function Projects({
                 ))}
               </ul>
 
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.githubButton}
-                aria-label={`Исходный код ${project.title} на GitHub`}
-              >
-                <span>GitHub</span>
-                <span aria-hidden="true">↗</span>
-              </a>
+              <div className={styles.actions}>
+                {project.demoUrl && (
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.demoButton}
+                    aria-label={`Открыть демо ${project.title} в новой вкладке`}
+                  >
+                    <span>{project.demoLabel ?? 'Live Demo'}</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.githubButton}
+                  aria-label={`Исходный код ${project.title} на GitHub`}
+                >
+                  <span>GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
             </div>
           </article>
         ))}
